@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INF.03 PHP</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="top">
+  <div id="banner">
+    <h1>INF.03. Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych.</h1>
+    </div>
+    </div>
+  <div class="nav">
+    <ul>
+        <a href="../index.html" class="nav-link"><li>Strona Głowna</li></a>
+        <a href="../HTML/html.html" class="nav-link"><li>HTML</li> </a>
+        <a href="#" class="nav-link"><li>PHP</li> </a>
+        <a href="../JS/js.html" class="nav-link"><li>JAVASCRIPT</li> </a>
+        <a href="../CSS/css.html" class="nav-link"><li>CSS</li> </a>
+        <a href="../MEDIA/multi.html" class="nav-link"><li>MULTIMEDIA</li> </a>
+    </ul>
+  </div>
+  <div id="banner">
+    <h1>
+        PHP
+    </h1>
+  </div>
+</div>
+    <div id="tresc" style="padding-left: 50px; font-size: 20px;">
+        <h1>1.Zmienne</h1>
+        <p>Zmienne w php przypisujemy za pomocą znacznika "$". W skrypcie wygląda to tak: $nazwa_zmiennej=zmienna  </p>
+        <p>Przykład: <br>
+        $zmienna1=10;<br>
+        echo $zmienna1;<br><br>
+        $zmienna2="Hello World";<br>
+        echo $zmienna2;
+
+        <h1>2.Operatory</h1>
+        <p>Operatory w php możemy podzelic na kilka rodzaji:<br>
+        a) Operatory arytmetyczne:<br>
+        "+" - dodawanie<br>
+        "-" - odejmowanie<br>
+        "*" - mnożenie<br>
+        "/" - dzielenie<br>
+        "%" - dzielenie z resztą<br>
+        b) Operatory logiczne<br>
+        "||" - lub<br>
+        "&&" - i<br>
+        "if!(a)" - negacja<br>
+        c) Operatory porównania<br>
+        "<" - mniejsze<br>
+        ">" - większe<br>
+        "<=" - mniejsze bądz równe<br>
+        ">=" - większe bądz równe<br>
+        "!=" - różne od <br>
+        "==" - równe<br>
+        d) Operator przypisania: "="</p>
+
+       
+
+    <h1>3.Operacja na ciągach znaków</h1>
+        <p>W php możemy prowadzić operacje na ciągach znaków za pomocą skryptu. </p>
+        <p>Przykładowe operacje na ciągach znaków <br>
+        chr(68) - zamienia numery na znaki,<br>
+        ord("Agh") - zamienia znaki na numery,<br>
+        <br>
+        $a="mój ciąg tekstowy";<br>
+        $b=strpos($a, "c"); - szuka litery "c" w ciągu "$a",<br>
+        strRpase($a,"o"); - szuka litery od końca,<br>
+        strchr($a, "t"); - szuka wybranego znaku i bierze fragment tekstu za tym znakiem,<br>
+        strstr($a, "te"); - szuka po ciągu znaków,<br>
+        substry($a,4,5); - wycina dana ilosc znaków od wybranego z danego ciągu,<br>
+        strlen($a); - zwraca długość ciągu,<br>
+        strtoupper($a); - zamienia na duże litery,<br>
+        strtolower($a); - zamienia na małe litery,<br>
+        ucfirst($a); - zamienia pierwszą itere na dużą,<br>
+        ucwords($a); - zamienia pierwszą litere każdego wyrazu na dużą,<br></p>
+
+
+    <h1>4.Pobieranie z formularza</h1>
+    
+        <p>Dane z formularza pobieramy za pomocą znacznika "name" pobierając je metodą "POST" lub "GET". W samym skrypcie uzywamy polecenie "$nazwa_zmiennei=$_POST["nazwa_znacznika_name"]".  </p>
+        <p>Przykład: <br>
+        form method="POST"<br>
+        input type="text" name="a"<br>
+        majac taki formularz w skrypcie wystarczy napisać:<br>
+        $zmienna1=$_POST["a"];</p>
+    
+        <h1>5.Obliczenia</h1>
+        <p> Znając operatory oraz jak przypisywac zmienne, możemy wykonywać różne obliczenia np:</p>
+        <p>$a=$_POST["a"];<br>
+        $b=$_POST["b"];<br>
+        $c=$_POST["c"];<br>
+        $d=$a*$b;<br>
+        echo $d;
+        <hr><p>
+        $e=$a*$b/c;<br>
+        echo $e;</p>
+        <hr>
+        <p>
+        $f=$a*2+($b%c);<br>
+        echo $e;</p>
+
+        <h1>6.Funkcje Matematyczne w PHP</h1>
+        <p> W php istnieje wiele funkcji matematycznych ulatwiające nam obliczenia. Mozna je wplatac w tworzone skrypty takie jak w przykładzie powyżej.</p>
+        <p>Wybrane Funckje Matematyczne w PHP:<br>
+        ceil($a) - zaokrągla liczbe w górę,<br>
+        floor($a) = zaokrągla liczbę w dół, <br>
+        abs($a) - zwraca wartość bezwzględną,<br>
+        pow($a,$b) - podnosi wartość $a do potęgi $b,<br>
+        rand(0,100) - losuje liczbe z wybranego przedziału,<br>
+        round($a) - zaokrągla,<br>
+        sqrt($a) - zwraca pierwiastek z liczby $a,<br></p>
+    </p>
+       
+
+        <h1>7.Zapis i odczyt z bazy oraz zapytania</h1>
+        <p>PHP umożliwia nam podpięcie bazy danych do naszej witryny, oraz odczyt czy zapis do bazy za pomocą zapytań.</p>
+        <p> Przykład podpięcia i wyświetlenia danych z bazy: <br>
+        $a=mysqli_connect("localhost","root",""); - polecenie łączące z bazami<br>
+        mysqli_select_db("$a","nazwa_wybranej_bazy"); - polecenie wybierające bazę z której chcesz skorzystać<br>
+        $b="SELECT 'imię','nazwisko' FROM 'pracownicy'"; - zapytanie Select wybiera imie i nazwisko z tabeli prcownicy<br>
+        $wynik=mysqli_query($a,$b); - polecenie to wysyła zapytanie do bazy<br>
+        While($tab=mysqli_fetch_array($wynik)){<br>
+        echo $tab['imię']." ".$tab['nazwisko'];<br>
+        } - tworzymy pętle while oraz tablice $tab, funckja ta pobiera i wyświetla wybrane dane z bazy<br>
+        mysqli_close($a); - polecenie które kończy połączenie z bazą</p>
+        
+        <p>W przypadku zapisu danych do bazy jest bardzo podobnie, należy jedynie ominąć pętle while oraz zmienić zapytanie z SELECT na INSERT INTO: <br>
+        $a=mysqli_connect("localhost","root",""); <br>
+        mysqli_select_db("$a","nazwa_wybranej_bazy");ć<br>
+        $b="INSERT INTO pracownicy('imię','nazwisko') VALUES ("Jan","Kowalski); - polecenie wprowadza do tabeli praconwycy do wybrano kolejno kolumn dane "Jan" oraz "Kowalski",
+        W miesjsce wprowadzonych dancyh możemy wprowadzać dane pobrane z formularza np VALUES ('$imie','$nazwisko')<br>
+        $wynik=mysqli_query($a,$b); - y<br>
+        mysqli_close($a); - polecenie które kończy połączenie z baz</p>
+
+        <p>Zapytanie możemy modyfikowac dodająć różne warunki takie jak:<br>
+        SELECT imie,nazwisko FROM pracownicy WHERE imie="Jan" - dodanie WHERE sprawi że zostaną wyswietleni pracownicy z imieniem Jan<br>
+    </p>
+    
+    <p>Warto również wspomnieć że poprawność naszych zapytań możemy sprawdzić w phpmyadmin w zakładce SQL w wybranej bazie</p>
+    <img src="sql.png" style="height: 50%; width: 40%; margin-bottom: 15px; margin-left: 12px;">
+    </div>
+    <div id="banner">
+        <h2>Stronę wykonali: Dawid Rec, Dawid Urbanik, Paweł Stachura, Szymon Stefanik, Jakub Szczygieł</h2>
+      </div>
+</body>
+</html>

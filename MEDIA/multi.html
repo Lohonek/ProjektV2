@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INF.03 JS</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <div id="banner">
+        <h1>
+          INF.03. Tworzenie i administrowanie stronami i aplikacjami
+          internetowymi oraz bazami danych.
+        </h1>
+      </div>
+    </div>
+    <div class="nav">
+      <ul>
+        <a href="../index.html" class="nav-link"><li>Strona Głowna</li></a>
+        <a href="../HTML/html.html" class="nav-link"><li>HTML</li> </a>
+        <a href="#" class="nav-link"><li>PHP</li> </a>
+        <a href="../JS/js.html" class="nav-link"><li>JAVASCRIPT</li> </a>
+        <a href="../CSS/css.html" class="nav-link"><li>CSS</li> </a>
+        <a href="../MEDIA/multi.html" class="nav-link"><li>MULTIMEDIA</li> </a>
+        </a>
+      </ul>
+    </div>
+    <div id="banner">
+      <h1>MULTIMEDIA</h1>
+    </div>
+    <div class="tekst" style="padding-left: 50px;">
+      <h1> Formaty plików multimedialnych:</h1>
+      <ul>
+        <li>.mp3 (format plików dźwiękowych)</li>
+        <li>.mp4 (format plików video i dźwiękowych)</li>
+        <li>.avi (format plików wideo)</li>
+        <li>.jpg (format plików graficznych)</li>
+        <li>.png (format plików graficznych)</li>
+        <li>.gif (format plików graficznych)</li>
+        <li>.bmp (format plików graficznych)</li>
+        <li>.svg (format plików graficznych)</li>
+      </ul> 
+
+      <h1>Dołączanie plików do strony</h1><br>
+      <h2>-Film</h2><br>
+      <p>Aby dodac film do strony należy uzyć znacznika <code> &lsaquo;video></video> </code></p>
+
+      <div class="main">
+
+        <div class="one">
+                <pre>&lsaquo;video width="320" height="240" controls>
+  &lsaquo;source src="movie.mp4" type="video/mp4">
+  &lsaquo;source src="movie.ogg" type="video/ogg">
+&lsaquo;/video>
+
+      </pre>
+        </div>
+        <div class="two">
+          <img src="przyklad2.png" alt="" style="width: 70%;">
+        </div>
+
+      </div>
+      
+
+
+
+      <h2>-Plik dzwiękowy</h2><br>
+      <p>Aby dodac plik dzwiękowy do strony należy uzyć znacznika <code> &lsaquo;audio></video> </code></p>
+      <div class="main">
+
+        <div class="one">
+          <pre>&lsaquo;audio width="320" height="240" controls>
+            &lsaquo;source src="movie.ogg" type="audio/mp4">
+            &lsaquo;source src="movie.mp3" type="audio/ogg">
+          &lsaquo;/audio>
+          
+        </pre>
+        </div>
+        <div class="two">
+          <img src="przyklad1.png" alt="" style="width: 70%;">
+        </div>
+
+       
+       
+      </div>
+      <h2>-Obraz</h2><br>
+      Obraz można dodać poprzez znacznik <code> &lsaquo;img src="" alt=""> </code><br><br>
+
+
+      <h3>Skalowanie Obrazów</h3><br>
+      <p>Rozmiar obrazów można zmienić za pomocą stylu <code>CSS</code>, parametrem <code>Width - Szerokość , Height - Wysokośc</code> lub <code>tramsform: scale(np. 0,7)</code> oraz także można zdięcie przeskalować w  programie graficznym, takim jak GIMP</p><br><br>
+      <img src="gimp.webp" alt=""><br><br>
+
+
+      <h2>Sposoby usuwania tła</h2>
+      <ul>
+        <li>aby usunąć tło obrazu, najpierw powinieneś otworzyć swój obraz w programie GIMP. Przejdź do pliku z lewego rogu górnego paska i kliknij Otwórz & wybierz plik obrazu, który chcesz pracować.</li>
+        <li>po drugie, przejdź do warstwy głównego obrazu i kliknij prawym przyciskiem myszy. Pojawi się nowe okno i kliknij na Dodaj kanał alfa., Jeśli wybierzesz ten kanał, po usunięciu tła, otrzymasz przezroczyste tło.</li>
+        <li>następnie wybierz narzędzie Zaznaczanie rozmyte z paska narzędzi i zacznij po prostu klikać tło obrazu i naciśnij Usuń</li>
+        <li>w ten sposób usuń tło. Podczas usuwania tła można zobaczyć niektóre miejsca, nie jest usuwane. W takim przypadku wybierz narzędzie gumka i kliknij na tych miejscach. Zobaczysz, że tło jest usuwane. W końcu otrzymasz tło usunięte obraz, jak chcesz.,</li>
+        <li>Jeśli jednak chcesz zastąpić kolor tła, po prostu wybierz nową warstwę z palety warstw, podaj kolor, który lubisz z narzędzia Wypełnienie wiadra, i przesuń nową warstwę w dół głównej warstwy obrazu.</li>
+      </ul>
+      <img src="gimp2.png" alt="">
+      
+
+
+    </div>
+    <div id="banner">
+      <h2>Stronę wykonali: Dawid Rec, Dawid Urbanik, Paweł Stachura, Szymon Stefanik, Jakub Szczygieł</h2>
+    </div>
+  </body>
+</html>

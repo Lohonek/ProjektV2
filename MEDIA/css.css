@@ -1,0 +1,14 @@
+.main{
+  display: flex;
+}
+
+.one{
+  width: 85%;
+}
+.two{
+  width: 25%;
+}
+
+.tekst{
+  font-size: 20px;
+}

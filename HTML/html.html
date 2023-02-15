@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INF.03 HTML</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="top">
+  <div id="banner">
+    <h1>INF.03. Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych.</h1>
+    </div>
+    </div>
+  <div class="nav"  >
+    <ul>
+        <a href="../index.html" class="nav-link"><li>Strona Głowna</li></a>
+        <a href="#" class="nav-link"><li>HTML</li> </a>
+        <a href="../PHP/PHP.html" class="nav-link"><li>PHP</li> </a>
+        <a href="../JS/js.html" class="nav-link"><li>JAVASCRIPT</li> </a>
+        <a href="../CSS/css.html" class="nav-link"><li>CSS</li> </a>
+        <a href="../MEDIA/multi.html" class="nav-link"><li>MULTIMEDIA</li> </a>
+    </ul>
+  </div>
+  <div id="banner">
+    <h1>
+        HTML
+    </h1>
+  </div>
+</div>
+    <div id="tresc">
+        <h2>BUDOWA ZNACZNIKA</h2>
+        <p>Znaczniki HTML składają się ze specjalnego tekstu umieszczonego między nawiasami ostrymi (" < " i " > "). W języku HTML występują znaczniki pojedyncze i podwójne składające się ze znacznika otwierającego i zamykającego. Znaczniki zamykające umieszczane są zawsze po znaczniku otwierającym i zawierają dodatkowo znak "/" zaraz po znaku mniejszości (" < ") na przykład < strong > i < /strong >. Znaczniki pojedyncze we wcześniejszych wersjach HTML musiały posiadać przez znakiem większości znak "/". W HTML5 nie jest on konieczny, ale jego obecność nie powoduje błędów. Wielkość liter nie ma znaczenia w przypadku nazwy znacznika, ale dobrą praktyką jest stosowanie małych liter.
+
+            Znacznik HTML (pojedynczy i otwierający) mogą zawierać dodatkowe dane zwane atrybutami. Atrybuty składają się z nazwy oraz wartości umieszczonej po znaku równa się w cudzysłowie.</p>
+        <H2>1. PODSTAWOWE ZNACZNIKI</H2>
+    <ul>
+        <li><strong>&lt; !doctype html &gt;</strong> - określa z jakim typem dokumentów mamy do czynienia. Jest to jeden z dwóch znaczników, który po znaku mniejszości ma wykrzyknik,</li>
+        <li><strong>&lt; html &gt; ... &lt; /html </strong> - między tym znacznikiem umieszczana jest cała treść dokumentu,</li>
+        <li><strong>&lt; head &gt; ... &lt; /head &gt;</strong> - zawiera podstawowe informacje o dokumencie, takie jak tytuł, opis, linki do arkuszy stylów i skryptów,</li>
+        <li><strong>&lt; body &gt; ... &lt; /body&gt;</strong> - Definiuje treść dokumentu</li>
+        <li><strong>&lt; title &gt; ... &lt; /title &gt;</strong> - tytuł strony, który pojawia się na pasku przeglądarki oraz w wynikach wyszukiwania. Uznawany za jeden z czynników rankingowych.</li>
+        <li><strong>&lt; meta ... &gt;</strong> - znacznik opisujący szczegółowo opisujący zawartość strony. W zależności od użytych argumentów może on zawierać opis strony (description - widoczne pod tytułem w wynikach wyszukiwania), słowa kluczowe (keywords - meta tag uznany za przestarzały, z którego największe wyszukiwarki już nie korzystają), kodowanie dokumentu czy autora strony.</li>
+        <li><strong>&lt; link ... &gt;</strong> - element określający relację między dokumentem a zewnętrznym zasobem.</li>
+        <li><strong>&lt; style &gt; ... &lt; /style &gt;</strong> - wewnętrzny arkusz stylów.</li>
+        <li><strong>&lt; script &gt; ... &lt; /script &gt;</strong> - umożliwia umieszczenie skryptu w kodzie HTML.</li>
+        <li><strong>&lt; body &gt; ... &lt; /body &gt;</strong> - znacznik zawierający główną treść dokumentu.</li>
+        <li><strong>&lt; div &gt; ... &lt; /div &gt;</strong> - blok wykorzystywany do budowy szkieletu dokumentu.</li>
+        <li><strong>&lt; hx &gt; ... &lt; /hx &gt;</strong> - nagłówek określonego przez x stopnia (od 1 do 6).</li>
+        <li><strong>&lt; p &gt; ... &lt; /p &gt;</strong> - paragraf tekstu.</li>
+        <li><strong>&lt; img ... &gt;</strong> - element graficzny.</li>
+        <li><strong>&lt; a &gt; ... &lt; /a &gt;</strong> - odnośnik, link do innej witryny lub zasobu, wewnętrzny lub zewnętrzny.</li>
+        <li><strong>&lt; ul &gt; ... &lt; /ul &gt;</strong> - lista nieuporządkowana.</li>
+        <li><strong>&lt; ol &gt; ... &lt; /ol &gt;</strong> - lista uporządkowana.</li>
+        <li><strong>&lt; li &gt; ... &lt; /li &gt;</strong> - element listy.</li>
+        <li><strong>&lt; table &gt; ... &lt; /table &gt;</strong> - tabela.</li>
+        <li><strong>&lt; tr &gt; ... &lt; /tr &gt;</strong> - wiersz w tabeli.</li>
+        <li><strong>&lt; td &gt; ... &lt; /td &gt;</strong> - komórka, będąca elementem wiersza.</li>
+        <li><strong>&lt; th &gt; ... &lt; /th &gt;</strong> - komórka będąca nagłówkiem dla kolumny.</li>
+        <li><strong>&lt; form &gt; ... &lt; /form &gt;</strong> - formularz. Wewnątrz tych znaczników umieszcza się elementy takie jak pola tekstowe, etykiety, checkboxy, pola wyboru, przyciski.</li>
+        <li><strong>&lt; strong &gt;...&lt; /strong &gt;</strong> - znacznik semantyczny informujący o ważności tekstu.</li>
+        <li><strong>&lt; em &gt; ... &lt; /em &gt;</strong> - znacznik semantyczny, wyróżnienie tekstu definiujące emfazę.</li>
+        <li><strong>&lt; span &gt;...&lt; /span &gt;</strong> - znacznik liniowy używany głównie do stylowania fragmentu tekstu.</li>
+        <li><strong>&lt; !-- ... -- &gt;</strong> - komentarz, niewidoczny dla użytkownika tekst</li>
+        </ul>
+        <H2>2. FORMATOWANIE</H2>
+
+            <table>
+                <tbody>
+                <tr><th style="width:100px"></th><th></th><th></th></tr>
+                <tr>
+                <td><strong>&lt;abbr&gt;</a></td>
+                <td>Definiuje skrót (abbreviation) lub akronim</td>
+                <td><abbr>Przykład</abbr></td>
+                </tr>
+                <tr>
+                <td><strong>&lt;address&gt;</a></td>
+                <td>Definiuje dane kontaktowe autora/właściciela dokumentu/artykułu</td>
+                <td><address>Przykład</address></td>
+                </tr>
+                <tr>
+                <td><strong>&lt;b&gt;</a></td>
+                <td>Definiuje pogrubiony tekst</td>
+                <td><b>Przykład</b></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;blockquote&gt;</a></td>
+                <td>Definiuje sekcję cytowaną z innego źródła</td>
+                <td><blockquote>Przykład</blockquote></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;cite&gt;</a></td>
+                <td>Definiuje tytuł dzieła (np. książki, piosenki, filmu, obrazu, rzeźby itp.).</td>
+                <td><cite>Przykład</cite></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;code&gt;</a></td>
+                <td>Tag frazy. Definiuje kawałek kodu komputerowego</td>
+                <td><code>Przykład</code></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;del&gt;</a></td>
+                <td>Definiuje tekst, który został usunięty z dokumentu</td>
+                <td><del>Przykład</del></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;dfn&gt;</a></td>
+                <td>Reprezentuje instancję definiującą termin</td>
+                <td><dfn>Przykład HTML</dfn></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;em&gt;</a></td>
+                <td>Tag frazy. Definiuje emfazę - nacisk na tekst (podkreślając jego wagę, zmieniając często znaczenie).</td>
+                <td><em>Przykład</em></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;i&gt;</a></td>
+                <td>Definiuje wyróżniony tekst, np. tytuł książki, cytat, symbol, wyrażenie obcojęzyczne itp.</td>
+                <td><i>Przykład</i></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;ins&gt;</a></td>
+                <td>Definiuje tekst, który został wstawiony do dokumentu</td>
+                <td><ins>Przykład</ins></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;kbd&gt;</a></td>
+                <td>Tag frazy. Definiuje znaki wprowadzane z klawiatury</td>
+                <td><kbd>Przykład</kbd></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;mark&gt;</a></td>
+                <td>Definiuje zaznaczony/podświetlony tekst</td>
+                <td><mark>Przykład</mark></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;pre&gt;</a></td>
+                <td>Definiuje wstępnie sformatowany tekst. Tekst jest wyświetlany czcionką o stałej szerokości, zachowuje spacje i podziały wierszy.</td>
+                <td><pre>Przykład</pre></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;q&gt;</a></td>
+                <td>Definiuje krótki cytat</td>
+                <td><q>Przykład</q></td>
+                </tr>
+                
+                <tr>
+                <td><strong> &lt;s&gt;</a></td>
+                <td>Definiuje tekst, który nie jest już poprawny, dokładny ani odpowiedni.</td>
+                <td><s>Przykład</s></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;samp&gt;</a></td>
+                <td>Tag frazy. Definiuje przykładowe dane wyjściowe z programu komputerowego</td>
+                <td><samp>Przykład</samp></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;small&gt;</a></td>
+                <td>Definiuje mniejszy tekst</td>
+                <td><small>Przykład</small></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;strong&gt;</a></td>
+                <td>Tag frazy. Definiuje ważny tekst</td>
+                <td><strong>Przykład </td>
+                </tr>
+                <tr>
+                <td><strong> &lt;sub&gt;</a></td>
+                <td>Definiuje tekst indeksu dolnego (subscripted)</td>
+                <td>ID<sub>przykład</sub></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;sup&gt;</a></td>
+                <td>Definiuje tekst indeksu górnego (superscripted)</td>
+                <td>IG<sup>przykład</sup></td>
+                </tr>
+                
+                <tr>
+                <td><strong> &lt;time&gt;</a></td>
+                <td>Określa datę / godzinę</td>
+                <td><time>10:00</time></td>
+                </tr>
+                <tr>
+                <td><strong> &lt;var&gt;</a></td>
+                <td>Tag frazy. Definiuje zmienną</td>
+                <td><var>Zmienna</var></td>
+                </tr>
+               
+                <tr>
+                <td><strong>  &lt;rp&gt;</a></td>
+                <td>Określa, co wyświetlać w przeglądarkach, które nie obsługują adnotacji ruby. Adnotacje ruby używa się w celu wyświetlania wymowy znaków używanych w Azji Wschodniej.</td>
+                <td><ruby>
+                漢 <rt></rt><rp>(</rp>ㄏㄢˋ<rp>)</rp>
+                </ruby></td>
+                </tr>
+                <tr>
+                <td><strong>  &lt;rt&gt;</a></td>
+                <td>Definiuje wyjaśnienie/wymowę znaków (dla typografii wschodnioazjatyckiej)</td>
+                <td>&nbsp;</td>
+                </tr>
+                <tr>
+                <td><strong> &lt;ruby&gt;</a></td>
+                <td>Definiuje adnotację ruby (dla typografii wschodnioazjatyckiej)</td>
+                <td>&nbsp;</td>
+                </tr>
+                <tr>
+                <td><strong>&lt;u&gt;</a></td>
+                <td>Definiuje tekst, który powinien różnić się stylistycznie od zwykłego tekstu, taki jak źle napisane słowa lub właściwe rzeczowniki w języku chińskim.</td>
+                <td><u>Przykład</u></td>
+                </tr>
+                
+                <tr>
+                <td><strong>&lt;meter&gt;</a></td>
+                <td>Definiuje pomiar skalarny w znanym zakresie (miernik) </td>
+                <td><meter value="2" min="0" max="5">2 z  10</meter></td>
+                </tr>
+                <tr>
+                <td><strong>&lt;progress&gt;</a></td>
+                <td>Reprezentuje postęp wykonania zadania </td>
+                <td><progress value="25" max="100"></progress></td>
+                </tr>
+                <tr>
+                <td><strong>&lt;template&gt;</a></td>
+                <td>Definiuje szablon. Ukrywa zawartość przed klientem </td>
+                <td><template>Przykład</template></td>
+                </tr>
+                </tbody>
+                </table>
+                <H2>3. FORMULARZE</H2>
+    <ul>
+        <li><strong>&lt; form &gt;</strong> - 	Definiuje formularz HTML do wprowadzania danych</li>
+        <li><strong>&lt; input &gt; </strong> - Definiuje pole wejściowe</li>
+        <li><strong>&lt; textarea &gt;  &gt;</strong> - Definiuje wielowierszowe pole wprowadzania tekstu<map></map> </li>
+        <li><strong>&lt; button &gt; &gt;</strong> - Definiuje klikalny przycisk</li>
+        <li><strong>&lt; select &gt;</strong> - Definiuje listę rozwijaną</li>
+        <li><strong>&lt; optgroup &gt;</strong> - Definiuje grupę powiązanych opcji na liście rozwijanej</li>
+        <li><strong>&lt; option &gt; </strong> - Definiuje opcję na liście rozwijanej<figure></figure></li>
+        <li><strong>&lt; label &gt; </strong> - 	Definiuje etykietę dla elementu &lt;input&gt;</li>
+        <li><strong>&lt; datalist &gt; </strong> - 	Określa listę wstępnie zdefiniowanych opcji kontrolek wprowadzania</li>
+        <li><strong>&lt; output &gt; </strong> - Definiuje wynik obliczenia</li>
+        <li><strong>&lt; fieldset &gt; </strong> - Grupuje powiązane elementy w formularzu</li>
+        <li><strong>&lt; legend &gt; </strong> - Definiuje podpis dla elementu &lt;fieldset&gt;</li>
+        <li><strong>&lt; script &gt; </strong> - 	Definiuje skrypt (po stronie klienta)</li>
+    </ul>
+    <H2>4. AUDIO/GRAFIKA</H2>
+    <ul>
+        <li><strong>&lt; img &gt;</strong> - Definiuje obraz</li>
+        <li><strong>&lt; map &gt; </strong> - Definiuje mapę obrazu (obraz z klikalnymi obszarami) po stronie klienta</li>
+        <li><strong>&lt; area &gt;  &gt;</strong> - Definiuje obszar (klikalny) wewnątrz mapy obrazu <map></map> </li>
+        <li><strong>&lt; canvas &gt; &gt;</strong> - Służy do rysowania grafiki w locie za pomocą skryptów (zwykle JS)</li>
+        <li><strong>&lt; svg  &gt;</strong> - Definiuje kontener na grafikę SVG</li>
+        <li><strong>&lt; figure  &gt;</strong> - Określa zawartość niezależną (ilustracje, diagramy, zdjęcia itp.)</li>
+        <li><strong>&lt; figcaption &gt; </strong> - Definiuje podpis dla elementu <figure></figure></li>
+        <li><strong>&lt; source &gt; </strong> - 	Definiuje wiele zasobów dla elementów multimedialnych (&lt;video&gt;, &lt;audio&gt; i &lt;picture&gt;)</li>
+        <li><strong>&lt; picture &gt; </strong> - 	Definiuje kontener dla wielu zasobów /wersji obrazu</li>
+        <li><strong>&lt; audio &gt; </strong> - Definiuje zawartość dźwiękową</li>
+        <li><strong>&lt; video &gt; </strong> - Definiuje wideo lub film</li>
+        <li><strong>&lt; track &gt; </strong> - Definiuje ścieżki napisów dla elementów multimedialnych (&lt;video&gt; i &lt;audio&gt;)</li>
+    </ul>
+    <H2>5 LISTY I TABELE</H2>
+    <ul>
+        <li><strong>&lt; table &gt;</strong> - Definiuje tabelę</li>
+        <li><strong>&lt; tr &gt; </strong> - Definiuje wiersz w tabeli</li>
+        <li><strong>&lt; th &gt;  &gt;</strong> - Definiuje komórkę nagłówka tabeli <map></map> </li>
+        <li><strong>&lt; td &gt; &gt;</strong> -	Definiuje komórkę w tabeli</li>
+        <li><strong>&lt; thead &gt;</strong> - 	Grupuje zawartość nagłówka tabeli</li>
+        <li><strong>&lt; tbody &gt;</strong> - Grupuje zawartość treści tabeli</li>
+        <li><strong>&lt; tfoot &gt; </strong> - Grupuje zawartość stopki tabeli</li>
+        <li><strong>&lt; caption &gt; </strong> - 	Definiuje podpis tabeli</li>
+        <li><strong>&lt; ul &gt; </strong> - 	Definiuje nieuporządkowaną listę (unordered list)</li>
+        <li><strong>&lt; ol &gt; </strong> - Definiuje uporządkowaną listę (ordered list)</li>
+        <li><strong>&lt; li &gt; </strong> - 	Definiuje element listy (list item)</li>
+        <li><strong>&lt; menu &gt; </strong> - Definiuje listę / menu poleceń.</li>
+    </ul>
+    <div id="banner">
+        <h2>Stronę wykonali: Dawid Rec, Dawid Urbanik, Paweł Stachura, Szymon Stefanik, Jakub Szczygieł</h2>
+    </div>
+</body>
+</html>

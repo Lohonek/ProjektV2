@@ -1,0 +1,49 @@
+
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #00337c;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 1.2em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+code {
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+  font-size: 1.2rem;
+}
+
+.js {
+  display: flex;
+}
+
+.des {
+  width: 80%;
+}
+
+.img {
+  width: 20%;
+}
+
+img {
+  width: 40%;
+}
+
+.pliki{
+  padding-left: 20px;
+}
+
+.tresc{
+  font-size: 20px;
+}

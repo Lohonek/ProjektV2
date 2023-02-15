@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INF.03 JS</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <div id="banner">
+        <h1>
+          INF.03. Tworzenie i administrowanie stronami i aplikacjami
+          internetowymi oraz bazami danych.
+        </h1>
+      </div>
+    </div>
+    <div class="nav">
+      <ul>
+        <a href="../index.html" class="nav-link"><li>Strona Głowna</li></a>
+        <a href="../HTML/html.html" class="nav-link"><li>HTML</li> </a>
+        <a href="../PHP/PHP.html" class="nav-link"><li>PHP</li> </a>
+        <a href="#/JS/js.html" class="nav-link"><li>JAVASCRIPT</li> </a>
+        <a href="../CSS/css.html" class="nav-link"><li>CSS</li> </a>
+        <a href="../MEDIA/multi.html" class="nav-link"><li>MULTIMEDIA</li> </a>
+        </a>
+      </ul>
+    </div>
+    <div id="banner">
+      <h1>JAVASCRIPT</h1>
+    </div>
+    <div id="tresc" style="padding-left: 50px;">
+      <div class="js">
+        <div class="des">
+          <h3>
+            JavaScript jest używany najczęściej przy tworzeniu stron www,
+            zapewniając ich interaktywność oraz obsługę zdarzeń, walidację
+            formularzy czy budowanie elementów nawigacyjnych. Ale w tym języku
+            można także pisać pełnoprawne aplikacje (korzystając z frameworków do
+            budowania aplikacji jak np. Angular, React czy Vue. JS-a można używać
+            również po stronie serwera (backend) dzięki frameworkowi Node
+          </h3>
+        </div>
+        <div class="img">
+          <img
+            src="logo.png
+              "
+            alt="js-logo"
+          />
+        </div>
+      </div>
+    <div class="zmienne tresc">
+      <h1>#1 Zmienne</h1>
+      <p>
+        Zmienna to najprościej mówiąc pojemnik (szufladka, pudełko) na dane –
+        możemy w nim przechować np. liczbę, napis (w programowaniu na napis
+        mówimy często: łańcuch), wartość logiczną (true/false) albo dane jeszcze
+        innego typu. Oczywiście wartość przechowywana w takiej zmiennej tak
+        naprawdę “siedzi” w pamięci RAM komputera – i rzeczywiście czasami
+        potrzebujemy w skrypcie jakąś wartość zapamiętać.
+      </p>
+      <p>
+        Zmienne deklarujemy z użyciem klauzuli var (ang. variable = zmienna), po
+        czym podajemy nazwę tej nowej szufladki w pamięci:
+      </p>
+
+      <pre>
+var ile_jablek = 12;
+let liczba = 20;</pre
+      >
+      <p>
+        Oprócz zmiennych, w których przechowywane wartości mogą się dynamicznie
+        zmieniać w trakcie wykonania skryptu, możemy także w JS zadeklarować
+        tzw. stałą – jest to taki pojemnik na dane, którego zawartość nie
+        powinna ulegać zmianom. Stałą można stworzyć z użyciem klauzuli const
+        (łac. constans = stały, niezmienny):
+      </p>
+      <pre>
+const PI = 3.141592653;
+PI = 14.3; // błąd – zmiana wartości stałej!</pre
+      >
+    </div>
+    <div class="fmat tresc">
+      <h1>#2 Funkcje Matematyczne</h1>
+      <p>
+        <code>Math()</code> to w JavaScript specjalny, predefiniowany obiekt
+        dostępny w globalnym zasięgu, który (jak sama nazwa wskazuje) zawiera
+        wiele metod i stałych związanych z matematyką.
+      </p>
+      <pre>
+Math.abs()  -  Zwraca wartość absolutną
+Math.ceil()  -  Zaokrąglanie do liczby większej
+Math.floor()  -  Zaokrąglanie do liczby mniejszej
+Math.max()  -  Zwraca najwiekszą liczbe
+Math.min()  -  Zwraca najmniejszą liczbe
+Math.pow(x , y)  -  Potęga gdzie x = podstawa, y = potęga
+Math.round()  -  Zaokrąglanie do liczby całkowitej
+Math.random()  -  Generowanie losowej liczby
+Math.sqrt()  -  Zwraca pierwiastek z liczby
+Math.PI  -  Zwraca liczbe PI</pre
+      >
+    </div>
+    <div class="operatory tresc">
+      <h1>#3 Operatory</h1>
+      <pre>
++	dodawanie liczb oraz klejenie łańcuchów (konkatenacja)
+-	odejmowanie liczb
+*	mnożenie liczb
+/	dzielenie liczb
+++	inkrementacja (zwiększenie liczby o dokładnie 1)
+--	dekrementacja (zmniejszenie liczby o dokładnie 1)
+%	reszta z dzielenia (tzw. modulo), na przykład: 27 % 6 jest równe 3, gdyż cztery szóstki mieszczą się w 27 (cdaje 24 i reszty zostaje 3)
+=	przypisanie wartości do zmiennej
+==	porównanie wartości 
+<	mniejsze od
+<=	mniejsze lub równe od
+>	większe od
+>=	większe lub równe od
+!	zaprzeczenie (negacja)
+&&	logiczne "i" (and)
+||	logiczne "lub" (or)
++=	skrócony zapis, np. a += b odpowiada: a = a + b
+-=	skrócony zapis, np. a -= b odpowiada: a = a - b</pre
+      >
+    </div>
+    <div class="pobieranie tresc">
+      <h1>#4 Pobieranie danych</h1>
+      <span
+        >Aby pobrać dane z formularza trzeba uzyć metody
+        <code>document.getElementById()</code>, gdzie w nawiasie podajemy id
+        danego elementu.</span
+      >
+      <pre>var x = document.getElementById("myText").value;</pre>
+    </div>
+    <div class="array tresc">
+      <h1>#5 Operacje na ciągach znaków</h1>
+      <p>
+        String jest typem danych służącym do przechowywania ciągu znaków. Ciąg
+        znaków zapisujemy w cudzysłowia i przypisujemy do zmiennej za pomocą
+        znaku przypisania (=).
+      </p>
+      <p>
+        Ciąg znaków działa jak tablica przechowująca poszczególne znaki w
+        kolejnych swoich komórkach. Zatem jak w przypadku zwykłych tablic,
+        możemy użyć na ciągu znaków własności length, aby sprawdzić długość
+        ciągu znaków.
+      </p>
+      <p>
+        Przykład definicji ciągu znaków oraz wypisania jego długości na ekran:
+      </p>
+      <pre>
+var tekst = "Wszędzie dobrze, ale w 127.0.0.1 najlepiej.";
+console.log( tekst.length ); // 43</pre
+      >
+      <p>
+        Ciągi znaków można łączyć ze sobą, w jeden łańcuch. Jest to tzw.
+        konkatenacja. Dokonujemy tego za pomocą symbolu +.
+      </p>
+      <p>
+        Przykład konkatenacji. Łączymy ze sobą ciąg znaków zawarty w zmiennej
+        tekst oraz dodatkowy łańcuch zawarty w apostrofach. Wynik naszego
+        działania wypisujemy w konsoli przeglądarki.
+      </p>
+      <pre>
+var tekst = "Wszędzie dobrze, ale w 127.0.0.1 najlepiej.";
+tekst = tekst + ' Nieprawdaż?';
+console.log(tekst); // Wszędzie dobrze, ale w 127.0.0.1 najlepiej. Nieprawdaż?</pre
+      >
+
+      <h3>Przykladowe</h3>
+      <pre>
+charCodeAt() - zamiana liczby na kod ASCI
+fromCharCode() - zamiana kodu ASCI na liczbe
+toUpperCase() - zamiana liter na duże
+toLowerCase() - zamiana liter na małe
+substring() - podzielenie stringa na kilka stringów
+slice() - ucięcie kawałka stringa
+replace() - zamina danych liter,znaków
+</pre
+      >
+    </div>
+    <div class="data tresc">
+      <h1>#6 Data i Czas</h1>
+      <p>
+        W JavaScript mamy do dyspozycji obiekt <code>date()</code>, który daje
+        nam możliwość dostępu do dat i manipulowania datami oraz czasem. Należy
+        pamiętać, że czas i data są pobierane z urządzenia końcowego (komputer,
+        smartfon, tablet), a nie z serwera.
+      </p>
+      <pre>
+getDate()	dzień miesiąca (wartość z przedziału 1 - 31)
+getDay()	dzień tygodnia (0 dla niedzieli, 1 dla poniedziałku, 2 dla wtorku itd.)
+getYear()	liczba reprezentująca rok (dla zakresu dat 1900 - 1999 jest to 2-cyfrowa liczba, a dla późniejszych jest to liczba 4-cyfrowa)
+getFullYear()	pełna liczba reprezentująca rok
+getHours()	zwraca aktualną godzinę (z przedziału 0 - 23)
+getMillisecond()zwraca milisekundy (z przedziału 0 - 999)
+getMinutes()	zwraca minuty (z przedziału 0 - 59)
+getMonth()	zwraca aktualny miesiąc (0 - styczeń, 1 - luty itd.)
+getSeconds()	zwraca aktualną liczbę sekund (z przedziału 0 - 59)
+      </pre>
+    </div>
+    <div class="wyswietlanie tresc">
+      <h1>#7 Wyświetlanie danych</h1>
+      <p>
+        1. Metoda <code>document.write()</code> – największą wadą tej prostej
+        instrukcji jest zniszczenie dotychczasowej zawartości witryny – cały
+        dokument zostanie nadpisany i wypełniony nową, podaną w nawiasie
+        zawartością (na ekranie pozostanie tylko wartość zmiennej).
+      </p>
+      <pre>
+var liczba = 12;
+document.write(liczba); </pre
+      >
+
+      <p>
+        2. Użycie okna popup typu <code>alert()</code> – wartość przechowywaną w
+        zmiennej możemy wyprowadzić w malutkim, wyskakującym w przeglądarce
+        okienku dialogowym – w prostych szkoleniowych skryptach to może wydawać
+        się dobrym pomysłem, ale w realiach internetowych używanie alertów jest
+        zazwyczaj uznawane za działanie inwazyjne (zniechęci internautę do
+        odwiedzin, a sama przeglądarka posiada mechanizmy ograniczające
+        nadużycia).
+      </p>
+      <pre>
+var liczba = 12;
+alert(liczba);</pre
+      >
+      <p>
+        3. Przygotowanie bloku (np. diva, wraz z nadaniem mu identyfikatora) i
+        wyprowadzenie wartości zmiennej do jego wewnętrznego HTML (innerHTML) –
+        wygodna metoda pozwalająca pokazać wartość zmiennej w uprzednio
+        przygotowanym miejscu witryny
+      </p>
+      <p>HTML – przygotowany pojemnik z nadanym identyfikatorem:</p>
+      <pre>div id="wynik"</pre>
+      <p>JavaScript – zmiana wartości atrybutu innerHTML uchwyconego diva:</p>
+      <pre>
+var liczba = 12;
+document.getElementById("wynik").innerHTML = liczba; </pre
+      >
+    </div>
+    <div class="pliki tresc">
+      <h1>#8 Skrypty</h1>
+      <p>Skrypty wbudowane:</p>
+      <br />
+      <ul>
+        <li>
+          Są ładowane na tę samą stronę, więc nie jest konieczne uruchamianie
+          innego żądania.
+        </li>
+        <li>Są wykonywane natychmiast.</li>
+        <li>Atrybuty asynchronizacji i odroczenia nie mają wpływu</li>
+        <li>
+          Może być pomocny, gdy używasz dynamicznego renderowania po stronie
+          serwera.
+        </li>
+      </ul>
+      <br />
+
+      <p>Skrypty zewnętrzne:</p>
+      <br />
+      <ul>
+        <li>Daje lepszy rozdział obaw i łatwość konserwacji.</li>
+        <li>
+          Atrybuty asynchronizacji i odroczenia mają efekt, więc jeśli te
+          atrybuty są obecne, skrypt zmieni zachowanie domyślne. Nie jest to
+          możliwe w przypadku skryptów wbudowanych.
+        </li>
+        <li>
+          Po pobraniu skryptu zewnętrznego przeglądarka przechowuje go w pamięci
+          podręcznej, więc jeśli odwołuje się do niego inna strona, nie jest
+          wymagane dodatkowe pobieranie.
+        </li>
+        <li>
+          Może być używany do ładowania kodu klienta na żądanie i skrócenia
+          ogólnego czasu i rozmiaru pobierania.
+        </li>
+      </ul>
+    </div>
+  </div>
+    <div id="banner">
+      <h2>Stronę wykonali: Dawid Rec, Dawid Urbanik, Paweł Stachura, Szymon Stefanik, Jakub Szczygieł</h2>
+    </div>
+
+  </body>
+</html>

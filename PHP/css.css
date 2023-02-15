@@ -1,0 +1,34 @@
+body{
+    box-sizing: border-box;
+   
+}
+
+#tytulowy{
+    height: 11%;
+    background-color: silver;
+ 
+    text-align: center;
+    font-size: 270%;
+}
+#menu{
+    width: 15%;
+    height: 332%;
+    float:left;
+    background-color:#D4D9D8;
+}
+#tresc{
+    width: 85%;
+    float:left;
+    font-size: 30px;
+}
+#stopka{
+    height: 25px;
+    text-align: center;
+    font-size: large;
+    clear: both;
+    background-color: silver;
+    
+}
+p,h1{
+    margin-left: 10px;
+}
